@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8850ff23-dc82-4c1c-90c5-1a66bbe6c2f6}</ProjectGuid>
+    <RootNamespace>My3DLibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(OutDir)3DLibrary.lib" "$(SolutionDir)Lib\3DLibrary.lib"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy /Y "$(ProjectDir)Timer.h" "$(SolutionDir)Inc\Timer.h"
+
+copy /Y "$(ProjectDir)DX11Define.h" "$(SolutionDir)\Inc\DX11Define.h"
+copy /Y "$(ProjectDir)ShaderDefine.h" "$(SolutionDir)Inc\ShaderDefine.h"
+copy /Y "$(ProjectDir)ResourceDefine.h" "$(SolutionDir)Inc\ResourceDefine.h"
+copy /Y "$(ProjectDir)ConceptDefine.h" "$(SolutionDir)Inc\ConceptDefine.h"
+
+copy /Y "$(ProjectDir)DXCamera.h" "$(SolutionDir)Inc\DXCamera.h"
+copy /Y "$(ProjectDir)ICamera.h" "$(SolutionDir)Inc\ICamera.h"
+
+copy /Y "$(ProjectDir)IFactory.h" "$(SolutionDir)Inc\IFactory.h"
+copy /Y "$(ProjectDir)Factory.h" "$(SolutionDir)Inc\Factory.h"
+
+copy /Y "$(ProjectDir)IObject.h" "$(SolutionDir)Inc\IObject.h"
+
+copy /Y "$(ProjectDir)EgoMatrix4x4.h" "$(SolutionDir)Inc\EgoMatrix4x4.h"
+
+copy /Y "$(ProjectDir)ResourceManager.h" "$(SolutionDir)Inc\ResourceManager.h"
+
+copy /Y "$(ProjectDir)Builder.h" "$(SolutionDir)Inc\Builder.h"
+copy /Y "$(ProjectDir)NonMeshBuilder.h" "$(SolutionDir)Inc\NonMeshBuilder.h"
+copy /Y "$(ProjectDir)MeshBuilder.h" "$(SolutionDir)Inc\MeshBuilder.h"
+
+copy /Y "$(ProjectDir)Grid.h" "$(SolutionDir)Inc\Grid.h"
+copy /Y "$(ProjectDir)WorldAxis.h" "$(SolutionDir)Inc\WorldAxis.h"
+copy /Y "$(ProjectDir)Box.h" "$(SolutionDir)Inc\Box.h"
+copy /Y "$(ProjectDir)MeshObject.h" "$(SolutionDir)Inc\MeshObject.h"
+
+copy /Y "$(ProjectDir)IResource.h" "$(SolutionDir)Inc\IResource.h"
+copy /Y "$(ProjectDir)ParentResource.h" "$(SolutionDir)Inc\ParentResource.h"
+copy /Y "$(ProjectDir)ChildResource.h" "$(SolutionDir)Inc\ChildResource.h"
+
+copy /Y "$(ProjectDir)DirectXTex.h" "$(SolutionDir)Inc\DirectXTex.h"
+copy /Y "$(ProjectDir)DirectXTex.inl" "$(SolutionDir)Inc\DirectXTex.inl"
+copy /Y "$(ProjectDir)DirectXTex.lib" "$(SolutionDir)Lib\DirectXTex.lib"
+
+copy /Y "$(ProjectDir)NonMesh.h" "$(SolutionDir)Inc\NonMesh.h"
+copy /Y "$(ProjectDir)Mesh.h" "$(SolutionDir)Inc\Mesh.h"
+copy /Y "$(ProjectDir)SkinnedMesh.h" "$(SolutionDir)Inc\SkinnedMesh.h"
+
+copy /Y "$(ProjectDir)ObjectResourceLoadingClass.h" "$(SolutionDir)Inc\ObjectResourceLoadingClass.h"
+
+copy /Y "$(ProjectDir)ObjectPool.h" "$(SolutionDir)Inc\ObjectPool.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="ChildResource.h" />
+    <ClInclude Include="ConceptDefine.h" />
+    <ClInclude Include="DirectXTex.h" />
+    <ClInclude Include="IResource.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshBuilder.h" />
+    <ClInclude Include="MeshObject.h" />
+    <ClInclude Include="NonMesh.h" />
+    <ClInclude Include="NonMeshBuilder.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="ObjectResourceLoadingClass.h" />
+    <ClInclude Include="ParentResource.h" />
+    <ClInclude Include="ResourceDefine.h" />
+    <ClInclude Include="DXCamera.h" />
+    <ClInclude Include="DX11Define.h" />
+    <ClInclude Include="EgoMatrix4x4.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="ICamera.h" />
+    <ClInclude Include="IFactory.h" />
+    <ClInclude Include="IObject.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ShaderDefine.h" />
+    <ClInclude Include="SkinnedMesh.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="WorldAxis.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="DXCamera.cpp" />
+    <ClCompile Include="EgoMatrix4x4.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="MeshObject.cpp" />
+    <ClCompile Include="ObjectResourceLoadingClass.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="WorldAxis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXTex.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

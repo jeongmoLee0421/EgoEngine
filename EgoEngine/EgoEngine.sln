@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DEngineDemo", "3DEngineDemo\3DEngineDemo.vcxproj", "{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6} = {8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58} = {FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DRenderer", "3DRenderer\3DRenderer.vcxproj", "{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3DLibrary", "3DLibrary\3DLibrary.vcxproj", "{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9} = {39E2A281-2DEF-4164-B4E0-E303C9C721B9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser", "Parser\Parser.vcxproj", "{39E2A281-2DEF-4164-B4E0-E303C9C721B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Debug|x64.ActiveCfg = Debug|x64
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Debug|x64.Build.0 = Debug|x64
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Debug|x86.ActiveCfg = Debug|Win32
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Debug|x86.Build.0 = Debug|Win32
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Release|x64.ActiveCfg = Release|x64
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Release|x64.Build.0 = Release|x64
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Release|x86.ActiveCfg = Release|Win32
+		{5AE0DFAE-3449-4067-9226-AB7C2D2BB2BB}.Release|x86.Build.0 = Release|Win32
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Debug|x64.ActiveCfg = Debug|x64
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Debug|x64.Build.0 = Debug|x64
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Debug|x86.Build.0 = Debug|Win32
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Release|x64.ActiveCfg = Release|x64
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Release|x64.Build.0 = Release|x64
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Release|x86.ActiveCfg = Release|Win32
+		{FB0FC523-9EE9-4FF4-AAEC-5767B4011F58}.Release|x86.Build.0 = Release|Win32
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Debug|x64.ActiveCfg = Debug|x64
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Debug|x64.Build.0 = Debug|x64
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Debug|x86.ActiveCfg = Debug|Win32
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Debug|x86.Build.0 = Debug|Win32
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Release|x64.ActiveCfg = Release|x64
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Release|x64.Build.0 = Release|x64
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Release|x86.ActiveCfg = Release|Win32
+		{8850FF23-DC82-4C1C-90C5-1A66BBE6C2F6}.Release|x86.Build.0 = Release|Win32
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Debug|x64.ActiveCfg = Debug|x64
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Debug|x64.Build.0 = Debug|x64
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Debug|x86.Build.0 = Debug|Win32
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Release|x64.ActiveCfg = Release|x64
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Release|x64.Build.0 = Release|x64
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Release|x86.ActiveCfg = Release|Win32
+		{39E2A281-2DEF-4164-B4E0-E303C9C721B9}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38E84F6F-4CBC-4A7C-B3F0-952BBF65227E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lexer">
+      <UniqueIdentifier>{8ab27518-1546-443a-9d08-b204daa74855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{e330f31b-3c68-4c3d-ad32-3e50620666e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ParsingData">
+      <UniqueIdentifier>{a570d144-f594-4204-8f22-fa27e2719e3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ASELexer.h">
+      <Filter>Lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="ASEParser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="ASEParsingData.h">
+      <Filter>ParsingData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ASELexer.cpp">
+      <Filter>Lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="ASEParser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="ASEParsingData.cpp">
+      <Filter>ParsingData</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

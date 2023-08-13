@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{a0ea27a5-5732-4f65-b6e6-dacfb036845d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{fce01725-0085-4952-bfae-69face72109d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera\Interface">
+      <UniqueIdentifier>{e99ef76a-4003-40b9-8cbe-7122e888c314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory">
+      <UniqueIdentifier>{a3a579d4-1f6c-402e-9d90-9f63f2fe7d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{252d9565-0aac-4156-995e-89e9adf8bf5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{bd3183ca-0ab8-4cd2-9f94-1ddb2a503b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{3b0eca65-5e0d-4c02-84e4-1e2094e20dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{48a24ac9-b4e8-4c46-a626-24f5e5b0e181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Interface">
+      <UniqueIdentifier>{beded549-ec08-4adc-97d5-10d791d2a87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Helper">
+      <UniqueIdentifier>{41cb4777-1e91-49b8-84b6-f5c314a9931d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Builder">
+      <UniqueIdentifier>{261768f7-e8fb-4b0e-94d5-d613368a50f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Interface">
+      <UniqueIdentifier>{d18cc6e5-a6f1-42e9-ae64-48400485c1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Mesh">
+      <UniqueIdentifier>{4f607f98-c7bc-4067-8c0e-58fc3e2fa42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\MeshType">
+      <UniqueIdentifier>{f071bda1-5f1d-4402-903a-503fc087b0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\TextureHeader">
+      <UniqueIdentifier>{6a27b168-999c-4c2d-8cd9-1e028bbca30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Manager">
+      <UniqueIdentifier>{8f6051f8-1cf6-4cf7-a56e-42be03056603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\ObjectResourceLoadingClass">
+      <UniqueIdentifier>{eb80a378-6da5-4e5b-aad6-2c95f76d7e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectPool">
+      <UniqueIdentifier>{90827b97-7a44-4dba-b458-492d57ecb48a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Timer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Define.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="ICamera.h">
+      <Filter>Camera\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>Object\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldAxis.h">
+      <Filter>Object\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Object\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="EgoMatrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="IFactory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="IResource.h">
+      <Filter>Resource\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ParentResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Object\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Object\MeshType</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinnedMesh.h">
+      <Filter>Object\MeshType</Filter>
+    </ClInclude>
+    <ClInclude Include="NonMesh.h">
+      <Filter>Object\MeshType</Filter>
+    </ClInclude>
+    <ClInclude Include="NonMeshBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBuilder.h">
+      <Filter>Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex.h">
+      <Filter>Resource\TextureHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Resource\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectResourceLoadingClass.h">
+      <Filter>Resource\ObjectResourceLoadingClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshObject.h">
+      <Filter>Object\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="ConceptDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>ObjectPool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="DXCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Object\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldAxis.cpp">
+      <Filter>Object\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="EgoMatrix4x4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Object\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Resource\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectResourceLoadingClass.cpp">
+      <Filter>Resource\ObjectResourceLoadingClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshObject.cpp">
+      <Filter>Object\Mesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXTex.inl">
+      <Filter>Resource\TextureHeader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
